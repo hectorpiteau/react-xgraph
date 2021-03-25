@@ -17,12 +17,44 @@ A demo of this tool is available [demo](http://demo.demo)
 React component used to show nodes and links.   
 
 ```ts
-    const nodes = [
+    const nodes:GNode[] = [
         {
             id:1,
-
-        }
+            type:"default",
+            x:50,
+            y:50,
+            text:"node 1"
+        },
+        {
+            id:2,
+            type:"default",
+            x:50,
+            y:100,
+            text:"node 2"
+        },
+        {
+            id:3,
+            type:"default",
+            x:100,
+            y:150,
+            text:"node 3"
+        },
     ]
+
+    const edges:GEdge[] = [
+        {
+            id:1,
+            type:"default",
+            from:1,
+            to:2
+        },
+        {
+            id:2,
+            type:"default",
+            from:2,
+            to:3
+        }
+    ] 
 
     interface MyProps {
         /* your props */
@@ -52,7 +84,6 @@ React component used to show nodes and links.
 | onSelecteEdge | `?(node:GEdge)=>void` (optional)  |
 | onCreateNode  | `?(node:GNode)=>void` (optional)  |
 | onClickOnBackground   | `?(x:number,y:number)=>void` (optional) |
-|
 
 ## Interfaces 
 
@@ -76,10 +107,11 @@ The interface is exported as `interface GNode` from the file `GNode.ts`. Here is
 | text      | `?string (optional)`        | The text to display in the middle of the node. It is the primary text of the node.| 
 | subtext   | `?string (optional)`        | The secondary text displayed under the node. | 
 | textColor | `?string (optional)`        | The color of the texts. Hex format. | 
-|
- 
 
-> If you want to type your meta informations, you can use `GXNode<T>` exported from `GNode.ts`, and replace T by an interface describing your meta informations. It will improve the typing of your code.
+
+### Adding types to your GNode's meta informations 
+
+If you want to type your meta informations, you can use `GXNode<T>` exported from `GNode.ts`, and replace T by an interface describing your meta informations. It will improve the typing of your code.
 
 
  ## GEdge
@@ -96,7 +128,10 @@ The interface is exported as `interface GEdge` from the file `GEdge.ts`. Here is
 | to        | `number`        | The id of the GNode where the link ends. | 
 
 
-> Same thing than for nodes, if you want to type your meta informations, you can use `GXEdge<T>` exported from `GEdge.ts`, and replace T by an interface describing your meta informations.
+
+### Adding types to your GEdge's meta informations 
+
+Same thing than for nodes, if you want to type your meta informations, you can use `GXEdge<T>` exported from `GEdge.ts`, and replace T by an interface describing your meta informations.
 
 
 ## Contributing
