@@ -1,6 +1,7 @@
 # react-xgraph
 
-##  **<span style="color:orange">Warning : This tool is under construction. Please do not use in a production environment until first release.</span>**
+##  
+**<span style="color:orange">Warning : This tool is under construction. Please do not use in a production environment until first release.</span>**
 
 
 # Brief
