@@ -3,7 +3,8 @@
 
 ## 🚧 ⚠️ Warning ⚠️ 🚧
 ```diff
-- Warning : This tool is under construction. Please do not use in a production environment until first release.
+- Warning : This tool is under construction. 
+- Please do not use in a production environment until first release.
 ```
 
 # Brief
