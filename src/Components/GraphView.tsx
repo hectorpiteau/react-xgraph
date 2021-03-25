@@ -49,8 +49,8 @@ export interface GraphViewProps {
     width?:number,
     onMoveNode?:(node:GNode)=>void,
     onMoveNodeComplete?:(node:GNode)=>void,
-    onSelecteNode?:(node:GNode)=>void,
-    onSelecteEdge?:(node:GEdge)=>void,
+    onSelectNode?:(node:GNode)=>void,
+    onSelectEdge?:(node:GEdge)=>void,
     onCreateNode?:(node:GNode)=>void,
     onClickOnBackground?:(x:number,y:number)=>void
 }
