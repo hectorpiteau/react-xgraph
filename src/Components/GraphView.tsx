@@ -37,41 +37,10 @@
  */
 
 import React, { useEffect } from 'react';
+import { GEdge } from './GEdge';
+import { GNode } from './GNode';
 
-export interface GNode {
-    /** The id of the node. Must be unique. */
-    id:number,
-    /** 
-     * The type of the node. By default it' "default". The type refers to 
-     * the name of the shape defined in //TODO include predef shapes 
-     * */
-    type:string,
-    /** The x coordinate of the node in the graph. */
-    x:number,
-    /** The y coordinate of the node in the graph. */
-    y:number,
-    /** Any Meta information that you want to get back on events. */
-    meta?:any,
-    backgroundColor?:string,
-    borderColor?:string,
-    text?:string,
-    subtext?:string,
-    textColor?:string
-}
 
-export interface GEdge {
-    /** The id of the edge. Must be unique. */
-    id:number,
-    /** 
-     * The type of the edge. By default it's "default". The type refers to 
-     * the name of the shape defined in //TODO include predef shapes 
-     * */
-    type:string,
-    /** The id of the node at the origin of the edge. */
-    from:number,
-    /** The id of the node at the end of the edge. */
-    to:number
-}
 
 export interface GraphViewProps {
     nodes?:GNode[],
