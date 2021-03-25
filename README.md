@@ -1,5 +1,8 @@
 # react-xgraph
 
+##  **<span style="color:orange">Warning : This tool is under construction. Please do not use in a production environment until first release.</span>**
+
+
 # Brief
 This component is used to represent a directed or undirected graph. It can be 
 used to display a set of custom nodes and links between thoses nodes.
